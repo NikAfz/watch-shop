@@ -10,10 +10,10 @@ function Header(){
         <h1>LuxeTick</h1>
         <div className="header--buttons">
           <a href="">
-            <ShoppingBagOutlinedIcon fontSize="large"/>
+            <ShoppingBagOutlinedIcon sx={{ fontSize: 30 }}/>
           </a>
           <a href="">
-            <FavoriteBorderOutlinedIcon fontSize="large"/>
+            <FavoriteBorderOutlinedIcon sx={{ fontSize: 30 }}/>
           </a>
 
         </div>

@@ -2,26 +2,32 @@
   font-family: kapakana;
   src: url(./assets/Kapakana.ttf);
 }
+
 *{
   padding: 0;
   margin: 0;
 }
+
 body{
+
+  --main:#8763e3;
+
   /* overflow-x: hidden; */
   font-family: Arial, Helvetica, sans-serif;
   /* display: flex;
-  justify-content: center;
-  flex-direction: row; */
+  flex-direction: column;
+  justify-content: center; */
   padding-bottom: 5000px;
 }
 .header{
-  /* position: fixed; */
+  position:fixed;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  position: fixed;
   width: 100vw;
   right: 0;
+  top: 0;
+  z-index: 100;
 }
 .header--container{
   background-color: rgba(46, 46, 46, 0.6);
@@ -56,4 +62,64 @@ body{
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+
+.Brands{
+  margin-top: 640px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.brands--container{
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  border: 3px solid black;
+  border-radius: 25px;
+  padding: 40px 0px;
+  gap: 40px;
+}
+.brands--header{
+  /* background-color: lightgreen; */
+  font-size: 60px;
+  font-family: kapakana;
+  width: 190px;
+  text-align: center;
+}
+.brands--img-list{
+  /* background-color: lightcoral; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+.brands--img-list a {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(217, 217, 217, 1);
+  border-radius: 200px;
+}
+.brands--img-list a:hover{
+  box-shadow: 0px 13px 50px var(--main) ;
+}
+
+.rolex,
+.Patek{
+  width: 150px;
+}
+.citizen,
+.tudor{
+  width: 120px;
+}
+.Jacob{
+  width: 80px;
 }
