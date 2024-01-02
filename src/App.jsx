@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import Header from './camponents/Header'
 import Hero from './camponents/hero'
 import Brands from './camponents/BrandName'
+import Section1 from './camponents/section1'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <Hero/>
       <Brands/>
+      <Section1/>
     </>
   )
 }

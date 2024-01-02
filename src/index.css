@@ -19,7 +19,12 @@ body{
   justify-content: center; */
   padding-bottom: 5000px;
 }
+body::selection{
+  color: black;
+  background: #8763e3;
+}
 .header{
+  user-select: none;
   position:fixed;
   display: flex;
   justify-content: center;
@@ -57,6 +62,11 @@ body{
 
 
 .hero--img{
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   width:100%;
   position:absolute;
   left: 0;
@@ -66,7 +76,12 @@ body{
 
 
 .Brands{
-  margin-top: 640px;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin-top: 87vh;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -122,4 +137,40 @@ body{
 }
 .Jacob{
   width: 80px;
+}
+
+
+.spacer{
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  aspect-ratio: 960/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.layer1{
+  background-image: url(./assets/wave1.svg);
+}
+.layer2{
+  background-image: url(./assets/wave4.svg);
+}
+.sec1--container{
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  background-color: var(--main);
+  color: white;
+  font-size: 55px;
+  font-family: kapakana;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
