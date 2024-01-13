@@ -5,6 +5,8 @@ import Header from './camponents/Header'
 import Hero from './camponents/hero'
 import Brands from './camponents/BrandName'
 import Section1 from './camponents/section1'
+import WatchCard from './camponents/WatchCard'
+import CardList from './camponents/WatchCardList'
 
 function App() {
   return (
@@ -13,6 +15,9 @@ function App() {
       <Hero/>
       <Brands/>
       <Section1/>
+
+      <CardList/>
+      
     </>
   )
 }
