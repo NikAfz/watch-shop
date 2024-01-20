@@ -5,16 +5,9 @@ import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import { Link } from "react-router-dom";
+import Tooltip from '@mui/material/Tooltip';
+import Zoom from '@mui/material/Zoom';
 
-
-const StyledBadge = styled(Badge)(({ theme }) => ({
-  '& .MuiBadge-badge': {
-    right: 0,
-    top: 28,
-    border: `2px solid ${theme.palette}`,
-    padding: '0 4px',
-  },
-}));
 
 function Header(){
   return(
@@ -25,16 +18,19 @@ function Header(){
         </Link>
         <div className="header--buttons">
           <Link to="/watch-shop/cart">
-            
-            <Badge badgeContent={1} color="secondary" >
-              <ShoppingBagOutlinedIcon sx={{ fontSize: 30 }}/>
-            </Badge>
+            <Tooltip title="Cart" arrow disableInteractive TransitionComponent={Zoom}>
+              <Badge badgeContent={1} color="secondary" >
+                <ShoppingBagOutlinedIcon sx={{ fontSize: 30 }}/>
+              </Badge>
+            </Tooltip>
             
           </Link>
           <Link to="/watch-shop/fav">
-            <Badge badgeContent={0} color="secondary" >
-              <FavoriteBorderOutlinedIcon sx={{ fontSize: 30 }}/>
-            </Badge>
+            <Tooltip title="Cart" arrow disableInteractive TransitionComponent={Zoom} >
+              <Badge badgeContent={0} color="secondary" >
+                <FavoriteBorderOutlinedIcon sx={{ fontSize: 30 }}/>
+              </Badge>
+            </Tooltip>
           </Link>
 
         </div>
