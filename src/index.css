@@ -55,8 +55,9 @@ body::selection{
   gap: 30px;
   align-items: center;
 }
-.header--buttons a {
+.header--container a {
   color: white;
+  text-decoration: none;
 }
 
 
@@ -275,13 +276,43 @@ body::selection{
 
 
 .Card-list{
-  margin-top: 100px;
+  /* margin-top: 100px; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 .Card-list--container{
   display: grid;
   grid-template-columns: repeat(3, 385px);
   gap: 30px;
+}
+
+
+.wavy--container{
+  background-color: var(--main);
+  height:65vh ;
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: -2;
+}
+.wavy--header-name{
+  /* background-color: lightblue; */
+  font-family: kapakana;
+  font-size:90px;
+  color: white;
+  text-shadow: 20px 12px 0 rgba(0, 0, 0, 0.123);
+}
+.spacer2{
+  aspect-ratio: 1850/150;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./assets/layered-waves2.svg);
+  margin-top: 55vh;
 }
