@@ -29,8 +29,9 @@ body::selection{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 100vw;
+  width: 100dvw;
   right: 0;
+  left: 0;
   top: 0;
   z-index: 100;
 }
@@ -123,7 +124,7 @@ body::selection{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(217, 217, 217, 1);
+  border: 2px solid #d9d9d9;
   border-radius: 200px;
 }
 .brands--img-list a:hover{
