@@ -22,7 +22,7 @@ function App() {
           <Route path='/watch-shop' element={<Home/>} />
           <Route path='/watch-shop/cart' element={<Cart/>} />
           <Route path='/watch-shop/fav' element={<Fav/>} />
-          <Route path='/watch-shop/products' element={<Products/>} />
+          <Route path='/watch-shop/products/all' element={<Products/>} />
 
         </Routes>
 
