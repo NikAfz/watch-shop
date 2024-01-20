@@ -1,25 +1,35 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+//components
 import Header from './camponents/Header'
-import Hero from './camponents/Hero'
-import Brands from './camponents/BrandName'
-import Section1 from './camponents/Section1'
-import WatchCard from './camponents/WatchCard'
-import CardList from './camponents/WatchCardList'
+
+//pages
+import Home from './pages/Home'
+import Cart from './pages/Cart';
+import Fav from './pages/Fav';
+import Products from './pages/Products';
 
 function App() {
   return (
-    <>
-      <Header/>
-      <Hero/>
-      <Brands/>
-      <Section1/>
+    <BrowserRouter>
+      <main>
+        <Header/>
+        <Routes>
 
-      <CardList/>
+          <Route path='/watch-shop' element={<Home/>} />
+          <Route path='/watch-shop/cart' element={<Cart/>} />
+          <Route path='/watch-shop/fav' element={<Fav/>} />
+          <Route path='/watch-shop/products' element={<Products/>} />
+
+        </Routes>
+
+      </main>
       
-    </>
+    </BrowserRouter>
   )
 }
 
-export default App
+export default App;
