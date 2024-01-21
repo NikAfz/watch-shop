@@ -11,6 +11,7 @@
 body{
 
   --main:#8763e3;
+  --main-light:rgba(215, 199, 255, 0.557);
 
   /* overflow-x: hidden; */
   font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +22,7 @@ body{
 }
 body::selection{
   color: black;
-  background: #8763e3;
+  background: var(--main);
 }
 .header{
   user-select: none;
@@ -306,6 +307,13 @@ body::selection{
   font-size:90px;
   color: white;
   text-shadow: 20px 12px 0 rgba(0, 0, 0, 0.123);
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+
 }
 .spacer2{
   aspect-ratio: 1850/150;
@@ -315,4 +323,18 @@ body::selection{
   background-size: cover;
   background-image: url(./assets/layered-waves2.svg);
   margin-top: 55vh;
+}
+
+
+.side-page-button--container{
+  background-color: white;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  gap: 50px;
+}
+.side-page-button--container .r-b:hover{
+  margin: -1px  -1px;
 }
