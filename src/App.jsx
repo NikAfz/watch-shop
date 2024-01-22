@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 //components
 import Header from './camponents/Header'
-import Footer from './camponents/footer';
+import Footer from './camponents/Footer';
 
 //pages
 import Home from './pages/Home'
