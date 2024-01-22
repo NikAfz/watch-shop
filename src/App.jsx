@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 //components
 import Header from './camponents/Header'
+import Footer from './camponents/footer';
 
 //pages
 import Home from './pages/Home'
@@ -25,9 +26,9 @@ function App() {
           <Route path='/watch-shop/products/all' element={<Products/>} />
 
         </Routes>
-
+        <Footer/>
       </main>
-      
+
     </BrowserRouter>
   )
 }

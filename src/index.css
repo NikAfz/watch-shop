@@ -18,7 +18,6 @@ body{
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
-  padding-bottom: 5000px;
 }
 body::selection{
   color: black;
@@ -337,4 +336,91 @@ body::selection{
 }
 .side-page-button--container .r-b:hover{
   margin: -1px  -1px;
+}
+
+
+
+
+.footer--container{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.footer-top--container{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.footer-top-left--container{
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.footer-top-left-top--container{
+  font-family: kapakana;
+  font-size: 50px;
+  font-weight: 600;
+  /* background-color: darkolivegreen; */
+}
+.footer-top-left-bottom--container{
+  /* background-color: darkcyan; */
+  font-size: 20px;
+  max-width: 30dvw;
+}
+
+.footer--hr{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer--hr hr{
+  width:95%;
+}
+
+.footer-bottom-container{
+
+  text-align: center;
+  margin: 10px 0;
+}
+.footer-top-right--container{
+  /* background-color: darkcyan; */
+  display: flex;
+  align-items: start;
+  gap: 20vw;
+  margin-right: 60px;
+}
+.link-tree{
+  /* background-color: darkgoldenrod; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.link-tree--name{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  word-spacing: 5px;
+}
+.link-tree--link{
+  font-size: 18px;
+  font-weight:100;
+  color: var(--main);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.link-tree--link:hover{
+  text-decoration: underline;
+}
+.free-white-space{
+  height: 200px;
+  background-color: white;
 }
