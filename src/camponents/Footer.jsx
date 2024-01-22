@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer(props) {
   return (
     <>
@@ -17,17 +19,17 @@ function Footer(props) {
           <div className="footer-top-right--container">
             <div className="link-tree">
               <p className="link-tree--name">Nik Afz</p>
-              <a href="" className="link-tree--link">github</a>
-              <a href="" className="link-tree--link">Linked In</a>
-              <a href="" className="link-tree--link">E-mail</a>
+              <a target="_blank" href="https://github.com/NikAfz" className="link-tree--link">github</a>
+              <a target="_blank" href="https://www.linkedin.com/in/nik-afz-4a0618268/" className="link-tree--link">Linked In</a>
+              <a target="_blank" href="mailto:nikafz980@gmail.com" className="link-tree--link">Email</a>
               {/* <a href="" className="link-tree--link">github</a> */}
             </div>
             <div className="link-tree">
               <p className="link-tree--name">Pages</p>
-              <a href="" className="link-tree--link">home</a>
-              <a href="" className="link-tree--link">cart</a>
-              <a href="" className="link-tree--link">favorit</a>
-              <a href="" className="link-tree--link">all products</a>
+              <Link to="/watch-shop/" className="link-tree--link">home</Link>
+              <Link to="/watch-shop/cart" className="link-tree--link">cart</Link>
+              <Link to="/watch-shop/fav" className="link-tree--link">favorit</Link>
+              <Link to="/watch-shop/products/all" className="link-tree--link">all products</Link>
             </div>
           </div>
         </div>
