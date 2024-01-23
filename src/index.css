@@ -11,7 +11,7 @@
 body{
 
   --main:#8763e3;
-  --main-light:rgba(215, 199, 255, 0.557);
+  --main-light:#d7c7ff8e;
 
   /* overflow-x: hidden; */
   font-family: Arial, Helvetica, sans-serif;
@@ -427,4 +427,42 @@ body::selection{
 .free-white-space{
   height: 200px;
   background-color: white;
+}
+
+
+.title404--container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  background-image: url(./assets/blob1.svg);
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* width: 50%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.title404--container h1{
+  font-size: 100px;
+}
+.title404--container h3{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.title404--container p{
+  font-size: 25px;
+  max-width: 500px;
+}
+.title404--link{
+  color: var(--main);
+  text-decoration: none;
+}
+.title404--link:hover{
+  text-decoration: underline;
 }

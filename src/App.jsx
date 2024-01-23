@@ -12,6 +12,7 @@ import Home from './pages/Home'
 import Cart from './pages/Cart';
 import Fav from './pages/Fav';
 import Products from './pages/Products';
+import Page404 from './pages/404';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path='/watch-shop/fav' element={<Fav/>} />
           <Route path='/watch-shop/products/all' element={<Products/>} />
 
+
+          <Route path='*' element={<Page404/>}/>
         </Routes>
         <Footer/>
       </main>
