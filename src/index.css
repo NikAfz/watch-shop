@@ -416,6 +416,10 @@ body::selection{
   color: var(--main);
   margin-bottom: 10px;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 .link-tree--link:hover{
   text-decoration: underline;

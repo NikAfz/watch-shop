@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 
 function Footer(props) {
   return (
@@ -19,9 +22,9 @@ function Footer(props) {
           <div className="footer-top-right--container">
             <div className="link-tree">
               <p className="link-tree--name">Nik Afz</p>
-              <a target="_blank" href="https://github.com/NikAfz" className="link-tree--link">github</a>
-              <a target="_blank" href="https://www.linkedin.com/in/nik-afz-4a0618268/" className="link-tree--link">Linked In</a>
-              <a target="_blank" href="mailto:nikafz980@gmail.com" className="link-tree--link">Email</a>
+              <a target="_blank" href="https://github.com/NikAfz" className="link-tree--link"> <GitHubIcon/> github</a>
+              <a target="_blank" href="https://www.linkedin.com/in/nik-afz-4a0618268/" className="link-tree--link"> <LinkedInIcon/> Linked In</a>
+              <a target="_blank" href="mailto:nikafz980@gmail.com" className="link-tree--link"> <EmailIcon/> Email</a>
               {/* <a href="" className="link-tree--link">github</a> */}
             </div>
             <div className="link-tree">
