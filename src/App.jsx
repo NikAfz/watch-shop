@@ -1,14 +1,14 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 //components
-import Header from './camponents/Header'
+import Header from './camponents/Header';
 import Footer from './camponents/Footer';
 
 //pages
-import Home from './pages/Home'
+import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Fav from './pages/Fav';
 import Products from './pages/Products';
