@@ -9,53 +9,26 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 
-function CardList() {
-
-  const [age, setAge] = React.useState('');
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+function CardList(props) {
+    const watches = props.data.map((element, index)=>{
+      return(
+        <WatchCard
+        key={index}
+        brand={element.brand}
+        name={element.name}
+        stars={element.stars}
+        price={element.price}
+        img={element.img}
+        fav={element.fav}
+        cart={element.cart}
+        />
+      );
+    })
   return(
 
     <div className="Card-list">
-      {/* <div>
-
-        <FormControl color="secondary" sx={{ m: 0, minWidth: 200 }}>
-          <InputLabel id="demo-simple-select-helper-label">Order by</InputLabel>
-          <Select
-            labelId="demo-simple-select-helper-label"
-            value={age}
-            label="handle"
-            onChange={handleChange}
-          >
-            <MenuItem value="">
-              <em>None</em>
-            </MenuItem>
-            <MenuItem value={1}>prise</MenuItem>
-            <MenuItem value={2}>raiting</MenuItem>
-          </Select>
-          <ButtonGroup fullWidth color="secondary" variant="outlined" >
-            <Button>111</Button>
-            <Button>111</Button>
-            <Button>111</Button>
-          </ButtonGroup>
-        </FormControl>
-
-      </div> */}
       <div className="Card-list--container">
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
-        <WatchCard/>
+        {watches}
       </div>
     </div>
   )

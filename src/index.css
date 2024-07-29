@@ -13,14 +13,16 @@ body{
   --main:#8763e3;
   --main-light:#d7c7ff8e;
 
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
+
+  caret-color: var(--main);
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
 }
-body::selection{
-  color: black;
+::selection{
+  color: white;
   background: var(--main);
 }
 .header{
@@ -62,20 +64,72 @@ body::selection{
 
 
 
+.hero-text--container{
 
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  position: fixed;
+  width: 100vw;
 
+  top: 0;
+  bottom: 0;
+  /* background-color: lightblue; */
+  z-index: -1;
+}
+.mouse-down--container{
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: column;
+  /* gap: -10px; */
+  align-items: center;
+  justify-content: center;
+
+}
+.hero--text {
+  font-family: kapakana;
+  font-size:120px;
+  color: rgb(255, 255, 255);
+  text-shadow: 20px 12px 0px rgba(0, 0, 0, 0.315);
+  
+  
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 .hero--img{
   user-select: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  width:100%;
-  /* max-height: 80vh; */
-  /* position:absolute;
+  width:100vw;
+  height: 110vh;
+  image-rendering:optimizeSpeed;
+  /*opacity: 0.5;
+  background-color: rgba(0, 128, 0, 0.5); 
+  background-blend-mode: multiply; */
+  position: fixed;
   left: 0;
-  top: 0; */
-  z-index: -1;
+  top: 0;
+  z-index: -3;
+  filter: brightness(120%) contrast(200%);
+  object-fit:cover;
+  
+}
+.hero--color{
+  width:100vw;
+  height: 110vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  background-color: #7757c7;
+  opacity: .7;
 }
 
 
@@ -85,10 +139,11 @@ body::selection{
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  margin-top: 12vh;
+  padding-top: 12vh;
   display: flex;
   justify-content: center;
   flex-direction: row;
+  background-color: white;
 }
 .brands--container{
   /* background-color: lightblue; */
@@ -164,6 +219,9 @@ body::selection{
   background-image: url(./assets/wave4.svg);
 }
 .sec1--container{
+  background-color: white;
+}
+.sec1--text{
   user-select: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -271,6 +329,9 @@ body::selection{
   border-width: 3px;
   background-color: #8763e32d;
 }
+.added{
+  color: rgb(255, 47, 47);
+}
 
 
 
@@ -321,8 +382,15 @@ body::selection{
   background-position: center;
   background-size: cover;
   background-image: url(./assets/layered-waves2.svg);
-  margin-top: 55vh;
 }
+.spacer2-1{
+  margin-top: 55vh;
+
+}
+.spacer2-2{
+  margin-top:100vh;
+}
+
 
 
 .side-page-button--container{

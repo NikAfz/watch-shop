@@ -1,13 +1,14 @@
 import React from "react";
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-import watch1 from "../assets/watch1.png"
 import { styled } from '@mui/material/styles';
-
-
 import Rating from '@mui/material/Rating';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { deepPurple, purple, red } from "@mui/material/colors";
+
+import watch1 from '../assets/watches/watch1.png';
+
 
 const StyledRating = styled(Rating)({
   '& .MuiRating-iconFilled': {
@@ -16,20 +17,20 @@ const StyledRating = styled(Rating)({
   
 });
 
-function WatchCard() {
+function WatchCard(props) {
   return(
     <>
       <div className="watchCard--container">
         <div className="watchCard--top-container">
           <div className="watch-img--container">
-            <img src={watch1} alt="" />
+            <img src={props.img} alt={props.name} />
           </div> 
           <div className="watchCard--top-container-right">
             <div>
               {/* <Rating name="read-only" value='3' size="large" readOnly color="ma"/> */}
               <StyledRating
                 name="customized-color"
-                value={3}
+                value={props.stars}
                 size="large" 
                 readOnly
                 icon={<StarBorderIcon fontSize="inherit" />}
@@ -37,7 +38,7 @@ function WatchCard() {
               />
             </div>
             <div className="card--price">
-              $ 1,000,000
+              $ {props.price}
             </div>
           </div> 
         </div>
@@ -46,12 +47,12 @@ function WatchCard() {
 
         <div className="watchCard--bottom-container">
           <div className="watchCard--name">
-            Rolex <span>/black heart</span>            
+            {props.brand} <span>/{props.name}</span>            
           </div>
           <div className="watchCard--buttons">
-            <button className="watchCard-add--button watchCard--hover">add</button>
+            <button className={props.cart ? "watchCard-add--button watchCard--hover added" :"watchCard-add--button watchCard--hover"}>{props.cart ? "remove" : "add"}</button>
             <button className="watchCard-fav--button watchCard--hover">
-              <FavoriteBorderIcon/>
+              {props.fav? <FavoriteIcon sx={{ color: deepPurple['A700'] }}/> : <FavoriteBorderIcon/>}
             </button>
           </div>
         </div>

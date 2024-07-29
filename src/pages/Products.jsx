@@ -1,12 +1,16 @@
 import CardList from "../camponents/WatchCardList"
 import WavyHeader from "../camponents/WavyHeader";
 
-function Products() {
+
+function Products(props) {
+  
   return (
     <>
       <WavyHeader name="All Products"/>
-      <div className="spacer2"></div>
-      <CardList/>
+      <div className="spacer2 spacer2-1"></div>
+
+
+      <CardList data={props.data} setData={props.setData}/>
       
     </>
   )

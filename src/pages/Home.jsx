@@ -5,13 +5,15 @@ import Section1 from '../camponents/Section1'
 import WatchCard from '../camponents/WatchCard'
 import CardList from '../camponents/WatchCardList'
 
-function Home() {
+function Home(props
+  
+) {
   return (
     <>
       <Hero/>
       <Brands/>
       <Section1/>
-      <CardList/>
+      <CardList data={props.data} setData={props.setData}/>
       
     </>
   )
