@@ -15,29 +15,29 @@ import Page404 from './pages/404';
 
 
 import watch1 from './assets/watches/watch1.png';
-import C1 from "../assets/watches/C1.png";
-import C2 from "../assets/watches/C2.png";
-import C3 from "../assets/watches/C3.png";
-import C4 from "../assets/watches/C4.png";
-import C5 from "../assets/watches/C5.png";
-import J1 from "../assets/watches/J1.png";
-import J2 from "../assets/watches/J2.png";
-import J3 from "../assets/watches/J3.png";
-import P1 from "../assets/watches/P1.png";
-import P2 from "../assets/watches/P2.png";
-import P3 from "../assets/watches/P3.png";
-import P4 from "../assets/watches/P4.png";
-import P5 from "../assets/watches/P5.png";
-import P6 from "../assets/watches/P6.png";
-import R1 from "../assets/watches/R1.png";
-import R2 from "../assets/watches/R2.png";
-import R4 from "../assets/watches/R4.png";
-import R5 from "../assets/watches/R5.png";
-import T1 from "../assets/watches/T1.png";
-import T5 from "../assets/watches/T5.png";
-import T6 from "../assets/watches/T6.png";
-import T7 from "../assets/watches/T7.png";
-import T8 from "../assets/watches/T8.png";
+import C1 from "./assets/watches/C1.png";
+import C2 from "./assets/watches/C2.png";
+import C3 from "./assets/watches/C3.png";
+import C4 from "./assets/watches/C4.png";
+import C5 from "./assets/watches/C5.png";
+import J1 from "./assets/watches/J1.png";
+import J2 from "./assets/watches/J2.png";
+import J3 from "./assets/watches/J3.png";
+import P1 from "./assets/watches/P1.png";
+import P2 from "./assets/watches/P2.png";
+import P3 from "./assets/watches/P3.png";
+import P4 from "./assets/watches/P4.png";
+import P5 from "./assets/watches/P5.png";
+import P6 from "./assets/watches/P6.png";
+import R1 from "./assets/watches/R1.png";
+import R2 from "./assets/watches/R2.png";
+import R4 from "./assets/watches/R4.png";
+import R5 from "./assets/watches/R5.png";
+import T1 from "./assets/watches/T1.png";
+import T5 from "./assets/watches/T5.png";
+import T6 from "./assets/watches/T6.png";
+import T7 from "./assets/watches/T7.png";
+import T8 from "./assets/watches/T8.png";
 
 function App() {
 
