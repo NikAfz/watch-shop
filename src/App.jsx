@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 //components
@@ -14,7 +13,7 @@ import Fav from './pages/Fav';
 import Products from './pages/Products';
 import Page404 from './pages/404';
 
-import watch1 from "./assets/watches/watch1.png";
+import watch1 from './assets/watches/watch1.png';
 import C1 from "./assets/watches/C1.png";
 import C2 from "./assets/watches/C2.png";
 import C3 from "./assets/watches/C3.png";
