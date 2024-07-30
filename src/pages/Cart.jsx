@@ -21,7 +21,7 @@ function Cart(props) {
     <>
       <WavyHeader name="Cart"/>
       <div className="spacer2 spacer2-1"></div>
-      {fixData >= 1 ?
+      {fixData.length >= 1 ?
         <>
           <div className="side-page-button--container">
             <Button 
