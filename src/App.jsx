@@ -42,7 +42,6 @@ import T8 from "./assets/watches/T8.png";
 function App() {
 
   const [data, setData] = useState(
-    // JSON.parse(localStorage.getItem("dataKey")) || 
     [
       {
         "index": 0,
