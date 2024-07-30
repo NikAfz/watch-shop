@@ -13,7 +13,7 @@ function Home(props
       <Hero/>
       <Brands/>
       <Section1/>
-      <CardList data={props.data} setData={props.setData}/>
+      <CardList data={props.data} setData={props.setData} location='home'/>
       
     </>
   )

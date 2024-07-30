@@ -41,9 +41,11 @@ import T8 from "./assets/watches/T8.png";
 
 function App() {
 
-  const [data, setData] = useState( 
+  const [data, setData] = useState(
+    // JSON.parse(localStorage.getItem("dataKey")) || 
     [
       {
+        "index": 0,
         "brand": "CITIZEN",
         "name": "Black Demon",
         "stars": 3,
@@ -53,6 +55,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 1,
         "brand": "CITIZEN",
         "name": "Gold Age",
         "stars": 3,
@@ -62,6 +65,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 2,
         "brand": "CITIZEN",
         "name": "Black Ion",
         "stars": 4,
@@ -71,6 +75,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 3,
         "brand": "CITIZEN",
         "name": "Black Panther",
         "stars": 3,
@@ -80,6 +85,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 4,
         "brand": "CITIZEN",
         "name": "Gold 59F",
         "stars": 2,
@@ -89,6 +95,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 5,
         "brand": "CITIZEN",
         "name": "Mother of Pearl",
         "stars": 5,
@@ -100,6 +107,7 @@ function App() {
 
 
       {
+        "index": 6,
         "brand": "Jacob & Co",
         "name": "Casino Tourbillon",
         "stars": 5,
@@ -109,6 +117,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 7,
         "brand": "Jacob & Co",
         "name": "Billionaire III",
         "stars": 5,
@@ -118,6 +127,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 8,
         "brand": "Jacob & Co",
         "name": "Opera Godfather",
         "stars": 5,
@@ -129,6 +139,7 @@ function App() {
 
 
       {
+        "index": 9,
         "brand": "Patek Philippe",
         "name": "S Nautilus",
         "stars": 4,
@@ -138,6 +149,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 10,
         "brand": "Patek Philippe",
         "name": "RG Nautilus",
         "stars": 4,
@@ -147,6 +159,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 11,
         "brand": "Patek Philippe",
         "name": "Grand Complications",
         "stars": 3,
@@ -156,6 +169,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 12,
         "brand": "Patek Philippe",
         "name": "Ellipse",
         "stars": 2,
@@ -165,6 +179,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 13,
         "brand": "Patek Philippe",
         "name": "Aquanaut",
         "stars": 3,
@@ -174,6 +189,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 14,
         "brand": "Patek Philippe",
         "name": "Complications",
         "stars": 4,
@@ -185,6 +201,7 @@ function App() {
 
 
       {
+        "index": 15,
         "brand": "Rolex",
         "name": "Gold Day-Date",
         "stars": 3,
@@ -194,6 +211,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 16,
         "brand": "Rolex",
         "name": "Daytona Platinum",
         "stars": 4,
@@ -203,6 +221,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 17,
         "brand": "Rolex",
         "name": "Cosmograph ",
         "stars": 5,
@@ -212,6 +231,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 18,
         "brand": "Rolex",
         "name": " Gold Cosmograph ",
         "stars": 3,
@@ -223,6 +243,7 @@ function App() {
 
 
       {
+        "index": 19,
         "brand": "Tudor",
         "name": "Black Bay Red",
         "stars": 3,
@@ -232,6 +253,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 20,
         "brand": "Tudor",
         "name": "Black Bay GMT",
         "stars": 4,
@@ -241,6 +263,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 21,
         "brand": "Tudor",
         "name": "Heritage Black Bay",
         "stars": 5,
@@ -250,6 +273,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 22,
         "brand": "Tudor",
         "name": "Black Bay 58",
         "stars": 3,
@@ -259,6 +283,7 @@ function App() {
         "cart": false,
       },
       {
+        "index": 23,
         "brand": "Tudor",
         "name": "Royal",
         "stars": 5,

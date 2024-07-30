@@ -43,7 +43,7 @@ function Fav(props) {
               remove all
             </Button>
           </div>
-          <CardList data={fixData} setData={props.setData} />
+          <CardList data={props.data} setData={props.setData} location='fav'/>
         </>
       ) : <NoItem title="Favorited"/>}
     </>

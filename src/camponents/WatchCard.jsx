@@ -31,7 +31,7 @@ function WatchCard(props) {
       }
       return item;
     });
-    localStorage.setItem("dataKey", JSON.stringify(newData))
+    localStorage.setItem("dataKey", JSON.stringify(newData));
     props.setData(newData);
   };
 
@@ -42,8 +42,9 @@ function WatchCard(props) {
       }
       return item;
     });
-    localStorage.setItem("dataKey", JSON.stringify(newData))
+    localStorage.setItem("dataKey", JSON.stringify(newData));
     props.setData(newData);
+    
   }
 
 

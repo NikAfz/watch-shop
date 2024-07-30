@@ -10,7 +10,7 @@ function Products(props) {
       <div className="spacer2 spacer2-1"></div>
 
 
-      <CardList data={props.data} setData={props.setData}/>
+      <CardList data={props.data} setData={props.setData} location='all' />
       
     </>
   )

@@ -1,7 +1,6 @@
 import { Button } from "@mui/material";
 import CardList from "../camponents/WatchCardList";
 import WavyHeader from "../camponents/WavyHeader";
-import DeleteIcon from '@mui/icons-material/Delete';
 import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
 import NoItem from '../camponents/NoItem';
 
@@ -21,7 +20,7 @@ function Cart(props) {
     <>
       <WavyHeader name="Cart"/>
       <div className="spacer2 spacer2-1"></div>
-      {fixData.length >= 1 ?
+      {fixData.length >= 1 ? (
         <>
           <div className="side-page-button--container">
             <Button 
@@ -52,9 +51,9 @@ function Cart(props) {
               purchase
             </Button>
           </div>
-          <CardList data={fixData} setData={props.setData}/>
+          <CardList data={props.data} setData={props.setData} location='cart'/>
         </>
-      : <NoItem title="In Your Cart" />}
+      ): <NoItem title="In Your Cart" />}
       
     </>
   )
