@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import reactLogo from './assets/react.svg'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -41,7 +41,7 @@ import T8 from "./assets/watches/T8.png";
 
 function App() {
 
-  const [data, setData] = useState(
+  const [data, setData] = useState( 
     [
       {
         "brand": "CITIZEN",
@@ -270,11 +270,18 @@ function App() {
     ]
   )
 
+  useEffect(() => {
+    const storedData = localStorage.getItem("dataKey");
+    if (storedData) {
+      setData(JSON.parse(storedData));
+    }
+  }, []);
+
 
   return (
     <BrowserRouter>
       <main>
-        <Header/>
+        <Header data={data}/>
         <Routes>
 
           <Route path='/watch-shop' element={<Home data={data} setData={setData} />} />
