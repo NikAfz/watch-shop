@@ -13,9 +13,9 @@ function Header(){
   return(
     <header className="header">
       <div className="header--container">
-        <Link to="/watch-shop/">
+        <a href="/watch-shop/">
           <h1>LuxeTick</h1>
-        </Link>
+        </a>
         <div className="header--buttons">
           <Link to="/watch-shop/cart">
             <Tooltip title="Cart" arrow disableInteractive TransitionComponent={Zoom}>
