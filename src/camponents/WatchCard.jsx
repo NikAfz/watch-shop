@@ -9,7 +9,6 @@ import { deepPurple, purple, red } from "@mui/material/colors";
 
 import watch1 from '../assets/watches/watch1.png';
 
-
 const StyledRating = styled(Rating)({
   '& .MuiRating-iconFilled': {
     color: '#8763e3',
@@ -17,7 +16,38 @@ const StyledRating = styled(Rating)({
   
 });
 
+
+
 function WatchCard(props) {
+
+  
+
+  
+
+  const toggleCart = (index) => {
+    const newData = props.data.map((item, i) => {
+      if (i === index) {
+        return { ...item, cart: !item.cart };
+      }
+      return item;
+    });
+    localStorage.setItem("dataKey", JSON.stringify(newData))
+    props.setData(newData);
+  };
+
+  const toggleFav = (index) => {
+    const newData = props.data.map((item, i) => {
+      if (i === index) {
+        return {...item, fav: !props.fav};
+      }
+      return item;
+    });
+    localStorage.setItem("dataKey", JSON.stringify(newData))
+    props.setData(newData);
+  }
+
+
+
   return(
     <>
       <div className="watchCard--container">
@@ -50,10 +80,21 @@ function WatchCard(props) {
             {props.brand} <span>/{props.name}</span>            
           </div>
           <div className="watchCard--buttons">
-            <button className={props.cart ? "watchCard-add--button watchCard--hover added" :"watchCard-add--button watchCard--hover"}>{props.cart ? "remove" : "add"}</button>
-            <button className="watchCard-fav--button watchCard--hover">
+
+            <button 
+              className={props.cart ? "watchCard-add--button watchCard--hover added" :"watchCard-add--button watchCard--hover"}
+              onClick={() => toggleCart(props.index)}
+            >
+              {props.cart ? "remove" : "add"}
+            </button>
+            
+            <button 
+              className="watchCard-fav--button watchCard--hover"
+              onClick={() => toggleFav(props.index)}
+            >
               {props.fav? <FavoriteIcon sx={{ color: deepPurple['A700'] }}/> : <FavoriteBorderIcon/>}
             </button>
+
           </div>
         </div>
       </div>

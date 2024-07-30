@@ -13,14 +13,18 @@ function CardList(props) {
     const watches = props.data.map((element, index)=>{
       return(
         <WatchCard
-        key={index}
-        brand={element.brand}
-        name={element.name}
-        stars={element.stars}
-        price={element.price}
-        img={element.img}
-        fav={element.fav}
-        cart={element.cart}
+          key={index}
+          brand={element.brand}
+          name={element.name}
+          stars={element.stars}
+          price={element.price}
+          img={element.img}
+          fav={element.fav}
+          cart={element.cart}
+
+          index={index}
+          data={props.data}
+          setData={props.setData}
         />
       );
     })
