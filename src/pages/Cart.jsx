@@ -3,7 +3,7 @@ import CardList from "../camponents/WatchCardList";
 import WavyHeader from "../camponents/WavyHeader";
 import DeleteIcon from '@mui/icons-material/Delete';
 import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
-import NoItem from "../camponents/NoItem";
+import NoItem from '../camponents/NoItem';
 
 function Cart(props) {
   
