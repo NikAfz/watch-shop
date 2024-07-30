@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import Badge from '@mui/material/Badge';
@@ -9,7 +9,12 @@ import Tooltip from '@mui/material/Tooltip';
 import Zoom from '@mui/material/Zoom';
 
 
-function Header(){
+function Header(props){
+
+  
+
+  
+
   return(
     <header className="header">
       <div className="header--container">
@@ -19,15 +24,15 @@ function Header(){
         <div className="header--buttons">
           <Link to="/watch-shop/cart">
             <Tooltip title="Cart" arrow disableInteractive TransitionComponent={Zoom}>
-              <Badge badgeContent={1} color="secondary" >
+              <Badge badgeContent={props.data.filter(item => item.cart).length} color="secondary" >
                 <ShoppingBagOutlinedIcon sx={{ fontSize: 30 }}/>
               </Badge>
             </Tooltip>
             
           </Link>
           <Link to="/watch-shop/fav">
-            <Tooltip title="Cart" arrow disableInteractive TransitionComponent={Zoom} >
-              <Badge badgeContent={0} color="secondary" >
+            <Tooltip title="Favorit" arrow disableInteractive TransitionComponent={Zoom} >
+              <Badge badgeContent={props.data.filter(item => item.fav).length} color="secondary" >
                 <FavoriteBorderOutlinedIcon sx={{ fontSize: 30 }}/>
               </Badge>
             </Tooltip>
