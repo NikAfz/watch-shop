@@ -93,7 +93,7 @@ body{
   font-size:120px;
   color: rgb(255, 255, 255);
   text-shadow: 20px 12px 0px rgba(0, 0, 0, 0.315);
-  
+  text-align: center;
   
   user-select: none;
   -webkit-user-select: none;
@@ -533,4 +533,13 @@ body{
 }
 .title404--link:hover{
   text-decoration: underline;
+}
+.no-item{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  padding-top: 40px;
+  margin-bottom: -100px;
 }
