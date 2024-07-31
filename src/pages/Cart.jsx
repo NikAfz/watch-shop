@@ -3,6 +3,7 @@ import CardList from "../camponents/WatchCardList";
 import WavyHeader from "../camponents/WavyHeader";
 import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
 import NoItem from '../camponents/NoItem';
+import { Link } from "react-router-dom";
 
 function Cart(props) {
   
@@ -41,15 +42,18 @@ function Cart(props) {
               >
               remove all
             </Button>
+            <Link to='/watch-shop/checkout'>
             <Button 
               sx={{borderRadius:"10px", backgroundColor:"#8763e3", "&:hover": {backgroundColor:"#6a4eb1"}}}
               variant="contained" 
               disableElevation 
               size="large" 
               endIcon={<ShoppingCartCheckoutRoundedIcon/>}
+              
               >
               purchase
             </Button>
+            </Link>
           </div>
           <CardList data={props.data} setData={props.setData} location='cart'/>
         </>

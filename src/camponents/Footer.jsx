@@ -6,7 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 function Footer(props) {
   return (
     <>
-      <div className="free-white-space"></div>
+      <div className="free-white-space-2"></div>
       <div className="footer--container">
         <div className="footer-top--container">
           <div className="footer-top-left--container">
