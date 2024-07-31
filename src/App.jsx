@@ -38,6 +38,7 @@ import T5 from "./assets/watches/T5.png";
 import T6 from "./assets/watches/T6.png";
 import T7 from "./assets/watches/T7.png";
 import T8 from "./assets/watches/T8.png";
+import CheckOut from './pages/CheckOut';
 
 function App() {
 
@@ -312,6 +313,7 @@ function App() {
           <Route path='/watch-shop/cart' element={<Cart data={data} setData={setData} />} />
           <Route path='/watch-shop/fav' element={<Fav data={data} setData={setData} />} />
           <Route path='/watch-shop/products/all' element={<Products data={data} setData={setData} />} />
+          <Route path='/watch-shop/checkout' element={<CheckOut data={data} setData={setData} />} />
 
 
           <Route path='*' element={<Page404/>}/>
