@@ -8,6 +8,7 @@ import NoItem from "../camponents/NoItem";
 
 
 function CheckOut(props) {
+  const fixData = props.data.filter(watch => watch.cart === true)
 
   const checkOutData = props.data.filter(watch => watch.cart === true).map((element)=>{
     return(
@@ -39,8 +40,7 @@ function CheckOut(props) {
   .filter(watch => watch.cart === true)
   .reduce((acc, watch) => acc + watch.price, 0)
   .toLocaleString());
-  
-  
+
   const purchaseHandle = () => {
     setTotalPrice(0)
     const newData = props.data.map((item)=>{
@@ -61,7 +61,7 @@ function CheckOut(props) {
     <>
       <WavyHeader name="Check out" />
       <div className="spacer2 spacer2-1"></div>
-      {totalPrice >=1 ? (
+      { fixData.length >=1 ? (
         <>
           <div className="checkout--container">
             <div className="checkout-left--container">
